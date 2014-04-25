@@ -1,7 +1,8 @@
 #ifndef FUNC_H_
 #define FUNC_H_
 
-using namespace std;
+namespace evgeni {
+
 
 class MyQueue
 {
@@ -23,7 +24,7 @@ public:
     bool filled();
 };
 
-
+}
 
 
 #endif // FUNC_H_

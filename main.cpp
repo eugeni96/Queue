@@ -2,12 +2,20 @@
 #include "func.h"
 
 using namespace std;
+using namespace evgeni;
 
 
 void control()
 {
+
+    cout<<"Instruction"<<endl
+        <<"enter 1 to add element"<<endl
+        <<"enter 2 to delete element"<<endl
+        <<"enter 3 to delete Quene"<<endl
+        <<"enter 4 to view Quene"<<endl
+        <<"enter 5 to check filled Quene"<<endl;
+
     MyQueue library;
-    int dt;
     int enter=1;
     while(enter!=0)
     {

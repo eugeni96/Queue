@@ -1,7 +1,10 @@
-#include "func.h"
 #include <iostream>
+#include "func.h"
+#include "users_func.h"
+
 
 using namespace std;
+using namespace evgeni;
 
 MyQueue::MyQueue():
     head(nullptr), tail(nullptr)
@@ -14,11 +17,11 @@ MyQueue::~MyQueue()
     delQueue();
 }
 
+
 void MyQueue::push ()
 {
-    int dt=0;
-    cout<<"Enter data:"<<endl;
-    cin>>dt;
+    int dt;
+    dt=enterData();
     Node *p=nullptr;
     p=new Node;
     p->link=nullptr;
@@ -60,6 +63,7 @@ void MyQueue::delQueue()
 
 void MyQueue::view()
 {
+    cout<<"Quene:"<<endl;
     Node *p=head;
     while(p)
     {
